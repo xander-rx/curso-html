@@ -30,7 +30,7 @@
     </header>
 
     <main>
-        <h2>Ingeniero de software en construccion</h2>
+        <h2>Ingeniero de software en construcción</h2>
         <p>Aprendiendo <strong>conceptos</strong> claves de html :p</p>
 
         <iframe 
@@ -69,6 +69,8 @@
         </ol>
 
         <button>Haz click aqui para modificar profesores</button>
+        <br>
+
 
         <a download href="/images/yo.jpg">
             <img
@@ -81,7 +83,7 @@
                 height="300"
             >
         </a>
-
+        <br>
         <input type="date">
         <input type="range">
 
@@ -105,51 +107,75 @@
             </details>
         </section>
 
+
+        <br>
+
         <section>
-            <h2>Formulario de contacto</h2>
-            <form method="post" action="/">
+            <h2>v2.0</h2>
+            <form action="" method="post">
                 <fieldset>
-                    <legend>Informacion personal</legend>
+                    <legend><strong>Formulario de contacto </strong></legend>
 
                     <div>
-                        <label>Nombre:
-                            <input type="text" id="name" name="name" placeholder="Escribir aqui" required>
+                        <label for="nombre">Nombre: 
+                            <input id="nombre" type="text" name="nombre" placeholder="Esribe tu nombre" required> 
                         </label>
                     </div>
-
                     <div>
-                        <label>Email:
-                            <input type="email" id="email" name="email" placeholder="Escribir aqui correo" required>
+                        <label for="apellido">Apellido: 
+                            <input id="apellido" type="text" name="apellido" placeholder="Escribe tu apellido" required> 
                         </label>
                     </div>
-
+                    <div>
+                        <label for="email">Email: 
+                            <input id="email" type="email" name="email" placeholder="Esribe tu email" required> 
+                        </label>
+                    </div>
+                    <div>
+                        <label for="telefono">Telefono: 
+                            <input id="telefono" type="tel" name="telefono" placeholder="Escribe tu número" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="comentario">Mensaje: </label>
+                        <div><textarea id="comentario" name="comentario" rows="3" cols="30" placeholder="Escribe tu mensaje"></textarea></div>
+                    </div>
                     <div>
                         <label for="why">Por qué quiere contacar?</label>
                         <select name="why" id="why">
-                            <option value="1">Actualizar</option>
-                            <option value="2">Duda</option>
+                            <option value="1">Duda</option>
+                            <option value="2">Actualizar</option>
                             <option value="3">Otras cosas</option>
                         </select>
                     </div>
-
                     <div>
-                        <datalist id="Languages">
-                            <option value="JavaScript">JAVASCRIPT</option>
-                            <option value="Java">JAVA</option>
-                            <option value="Html">HTML</option>
-                        </datalist>
-                        <label>
-                            Que lenguaje sera el tema?
-                            <input list="Languages" name="Languages">
+                        <p>Genero:</p>
+                        <label for="masculino">
+                            <div><input type="radio" name="genero" id="masculino" value="masculino" required >Masculino</div>
+                        </label>
+                        <label for="femenino">
+                            <div><input type="radio" name="genero" id="femenino" value="femenino" required>Femenino</div>
+                        </label>
+                        
+                    </div>
+                    <p>Intereses:</p>
+                    <div>
+                        <label for="html">
+                            <div><input type="checkbox" name="intereses" id="html" value="html">Html</div>
+                        </label>
+                        <label for="css">
+                            <div><input type="checkbox" name="intereses" id="css" value="css">Css</div>
                         </label>
                     </div>
-
                 </fieldset>
+                
                 <br>
                 <button type="submit">Enviar</button>
                 <br>
             </form>
         </section>
+
+
     </main>
 
     <footer>
