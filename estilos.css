@@ -66,3 +66,15 @@
         font-family: inherit;
         font-size: 100%;
         }
+
+        .nav{
+            display: flex; 
+            justify-content: space-between;
+            align-items: center; 
+            padding-inline: 1rem 2rem; 
+            background-color: #1a1a2e; 
+        }
+
+        .nav:hover{ /*para cuando el mouse esta encima del elemento */
+            background-color: #0044ff;
+        }
