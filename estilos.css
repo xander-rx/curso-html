@@ -3,6 +3,15 @@
         h1{
             color:rgb(143, 19, 19)
         }
+        
+        h5{
+            color: rgb(4, 134, 4);
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 1.04em;
+        }
+        .comandos{
+            outline: 4px solid rgb(4, 134, 4);
+        }
 
         header{
             font-family: playwrite Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
