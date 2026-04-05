@@ -153,6 +153,50 @@
             
         }
 
+        /* Tabla del contenido */
+
+        .contendio-tabla{
+            border-collapse: collapse; 
+            margin: 25px 10px;
+            font-size: 0.9em;
+            min-width: 600px;
+            border-radius: 5px 5px 0 0;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgb(0, 0, 0,0.15);
+        }
+
+        .contendio-tabla thead tr{
+            background-color: #009879;
+            color: #ffffff;
+            text-align: left;
+            font-weight: bold;
+        }
+        .contendio-tabla th,
+        .contendio-tabla td{
+            padding: 12px 15px;
+        }
+
+        .contendio-tabla tbody tr{
+            border-bottom: 1px solid #ddd;
+        }
+        .contendio-tabla tbody tr:nth-of-type(even) {
+            background-color: #f3f3f385;
+        }
+
+        .contendio-tabla tbody tr:last-of-type {
+            border-bottom: 2px solid #009879;
+        }
+
+        .contendio-tabla tbody tr.activito {
+            font-weight: bold;
+            color: #009879;
+        }
+
+        .tabla-wrap{  /*Para  responsive a movil*/
+            overflow-x: auto;
+        }
+ 
+
         
         h5{
             color: rgb(4, 134, 4);
