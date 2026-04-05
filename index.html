@@ -19,127 +19,166 @@
 </head>
 <body>
     <header>
-        <h1>Portafolio de Mario Vilcapoma</h1>
+        <h1>5to Ciclo - Mario Vilcapoma</h1>
         <nav class="nav">
-            <a  href="#experiencia">Cursos</a>
-            <a  href="#Profesores">Profesores</a> <!-- Enlaces internos -->
-            <a  rel="noreferrer" target="_blank" href="https://youtube.com">Youtube</a> <!-- Enlace externo -->
-            <a  href="#tabla-cursos">Tabla de Cursos</a>
+            <a href="#hero">Inicio</a>
+            <a href="#habilidades">Habilidades</a>
+            <a  href="#cursos">Cursos</a>
+            <a href="#aprendizajes">Aprendizajes</a>
+            <a href="#preguntas-frecuentes">Preguntas</a>
+            <a  href="#contacto">Contacto</a> <!-- Enlaces internos -->
+
         </nav>
     </header>
-
     <main>
-        <h2>Ingeniero de software en construcción</h2>
-        <p class="description">Aprendiendo <strong>conceptos</strong> claves de html :p</p>
+        <!-- Sección de héroe con imagen, texto y botón, añadi una 
+        clase a cada elemento para poder darle estilos, es mi definición/carte de presentación -->
+        <section id="hero" class="hero">
+            <div class="hero-texto">
+                <h2>Estudiante de Ingeniería de Software</h2>
+                <p>
+                Hola, soy Mario Vilcapoma, un estudiante de ingeniería de software en la Universidad Tecnológica del Perú (UTP).
+                Actualmente resido en: Lima, Perú.
+                <br>
+                Es verdad que soy estudiante de 5to ciclos, pero por problemas circunstaciales estos primeros ciclos solo me dedique
+                a aprobar cursos, en los ultimos 7 meses por temas de un proyecto personal (que me beneficio en tanto a dinero y "fama")
+                deje de lado el aprendizaje centrado, o sea, hace 7 meses antes de empezar el 5to ciclo, deje de programar
+                <br>
+                Si a eso le añadimos que antes solo lo hacia para aprobar cursos, no me dedique a aprender de verdad, solo a aprobar, 
+                entonces esto en mi carrera es un grave erro, debido a que actualmente hay tecnologias que no se enseñan en la universidad, 
+                y si no las aprendo por mi cuenta, no las voy a aprender nunca, 
+                y eso es un gran problema. Adicional a ello hay tecnologias que ya entraron al mercado para quedarse, como las IA al estar tan atrasado
+                por mi propia culpa, decidi tener un nuevo punto de partida en este inicio de ciclo, no iniciar de 0, porque es verdad que tengo base algo
+                solida del tema, ya que tengo más tiempo aprendiendo "programación" desde cursos en yotube cuando aún estaba en el colegio, asi que decidi centrarme
+                y para eso cree un plan de 31 dias, que fue elaborado gracias a una IA, la bendita "Claude.ia" que me ayudo con el plan de estudio, que no solo se 
+                basa en los silabos de todo mi curso de programación, sino en aprender otros conceptos, tener pruebas y mucho más. 
+                <br>
+                Desde practicas en leed-code, leer un libro como "Clean Code" de Robert C. Martin, hasta aprender a usar herramientas como GitHub (por primera vez) y 
+                más cosas que ire actualizando ya que llevo aun en el 7 dia (actualmente : ) y no sé que más esperara el plan, pero lo que sí he pensado es que luego hare otro donde 
+                poder adelantar todo mis cursos (acabar el ciclo, meses antes) y aprender otras cosas, tratar de tener planes muy detallados y avanzados, inclusive para ya poder tocar
+                otros temas, como programar videojuegos, programar en apple (ios/mac), aprender más lenguajes, hacer mi primera app, certificados como AWS Cloud Practitioner, Oracle Certified Associate Java 
+                y más, ire actualizando este texto poco a poco
+                <br>
+                Este portafolio reúne cursos, habilidades y proyectos en formación.
+               </p>
+              <a href="#cursos" class="btn">Ver proyectos</a> <!-- Enlace a la sección de proyecto -->
+            </div>
+            <div class="hero-imagen">
+                <img src="images/tom.jpg" alt="Foto de Mario">
+             </div>
+        </section>
 
-        <iframe 
-            style="width: 100%;
-            aspect-ratio: 16/9;"
-            src="https://www.youtube.com/embed/3nYLTiY5skU?si=DLWqvuqg6mPpbZCA" 
-            title="YouTube video player" 
-            allow="accelerometer; 
-            autoplay; clipboard-write; 
-            encrypted-media; gyroscope; 
-            picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin" 
-            allowfullscreen>
-        </iframe>
+        <section id="habilidades" class="habilidades">
+            <h2>Habilidades</h2>
+            <!-- En construcción-->
+        </section>
 
-        <h3 id="experiencia">Cursos de 5to ciclo</h3>
-        <!-- Mis 5 cursos, los añadi conm listados desordenados <Li>
-             tambien añadi una clase a la lista -->
-        <ul>
-            <li class="lista-cursos">Algoritmo y estructura de datos</li>
-            <li class="lista-cursos">Base de datos 2</li>
-            <li class="lista-cursos">Diseño de Patrones</li>
-            <li class="lista-cursos">Redes y comunicacion de datos 1</li>
-            <li class="lista-cursos">Sistema Operativos</li>
-            <li class="lista-cursos">Taller de Programacion Web</li>
-        </ul>
-
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, doloremque? Quam atque voluptatum, natus optio adipisci perferendis! Numquam ipsa corrupti, ipsam placeat asperiores iure facilis ad voluptatum delectus ex deserunt!</p>
-
-        <h3 id="Profesores">Mis profesores</h3>
-        <ol>
-            <li>Mario Hart</li>
-            <li>Tarazona Renfiho</li>
-            <li>Coppert Copernico</li>
-            <li>Tom Holland</li>
-        </ol>
-
-        <button id="show">Haz click aqui para modificar profesores</button>
-        <br>
-
-        <h3 id="tabla-cursos">Tabla de Cursos</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th>Cursos</th>
-                    <th>Creditos</th>
-                    <th>Dificultad</th>
-                    <th>Estado</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
+        <section id="cursos" class="cursos">
+            <h2>Mis cursos</h2>
+            <table>
+                <thead>
+                  <tr>
+                        <th>Cursos</th>
+                       <th>Creditos</th>
+                     <th>Dificultad</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
                     <td>Algoritmo y estructura de datos</td>
                     <td>120</td>
                     <td>Medio</td>
                     <td>Cursando</td>
-                </tr>
-                <tr>
-                    <td>Base de datos 2</td>
-                    <td>150</td>
-                    <td>Medio</td>
-                    <td>Cursando</td>
-                </tr>
-                <tr>
-                    <td>Diseño de Patrones</td>
-                    <td>120</td>
-                    <td>Dificil</td>
-                    <td>Cursando</td>
-                </tr>
-                <tr>
-                    <td>Redes y Comunicacion de datos 1</td>
-                    <td>125</td>
-                    <td>Medio</td>
-                    <td>Cursando</td>
-                </tr>
-                <tr>
-                    <td>Taller de Programacion Web</td>
-                    <td>150</td>
-                    <td>Easy</td>
-                    <td>Cursando</td>
-                </tr>
-                <tr>
-                    <td>Sistema Operativos</td>
-                    <td>150</td>
-                    <td>Dificil</td>
-                    <td>Cursando</td>
-                </tr>
-            </tbody>
-        </table>
-        <br>
+                    </tr>
+                    <tr>
+                        <td>Base de datos 2</td>
+                        <td>150</td>
+                        <td>Medio</td>
+                        <td>Cursando</td>
+                    </tr>
+                    <tr>
+                        <td>Diseño de Patrones</td>
+                        <td>120</td>
+                        <td>Dificil</td>
+                        <td>Cursando</td>
+                    </tr>
+                    <tr>
+                        <td>Redes y Comunicacion de datos 1</td>
+                        <td>125</td>
+                        <td>Medio</td>
+                        <td>Cursando</td>
+                    </tr>
+                    <tr>
+                        <td>Taller de Programacion Web</td>
+                        <td>150</td>
+                        <td>Easy</td>
+                        <td>Cursando</td>
+                    </tr>
+                    <tr>
+                        <td>Sistema Operativos</td>
+                        <td>150</td>
+                        <td>Dificil</td>
+                        <td>Cursando</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
-
-        <a download href="/images/yo.jpg">
-            <img
-                loading="lazy"
-                id="Photo-spider"
-                title="Foto de Spiderman"
-                src="/images/yo.jpg"
-                alt="Foto de las jordan x spiderman miles morales xd"
-                width="600"
-                height="300"
-            >
-        </a>
-        <br>
-        <input type="date">
-        <input type="range">
-
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam officiis veniam molestias? Temporibus autem dolore ab minima, accusantium atque commodi quidem aliquid ipsum minus <small>vero eligendi officia</small> eum, ut placeat?</p>
+        <section id="aprendizajes" class="aprendizajes">
+            <h2>Aprendizaje</h2>
+            <details>
+                <summary>Linux / CentOS / VMware</summary>
+                <p>He aprendido a administrar sistemas Linux, incluyendo distribuciones como CentOS, y a utilizar plataformas de virtualización como VMware.</p>
+                <p>Algunos comandos que use:</p>
+                <h5>Navegación y archivos</h5>
+                <p><strong>Comando pwd:</strong> Muestra la ruta de la carpeta actual.</p>
+                <p><strong>Comando cd:</strong> Cambia el carpeta actual.</p>
+                <p><strong>Comando ls -la:</strong> Lista todos los archivos y carpetas en la carpeta actual, incluyendo los ocultos.</p>
+                <h5>Crear y manipular archivos</h5>
+                <p><strong>Comando mkdir:</strong> Crea una nueva carpeta.</p>
+                <p><strong>Comando touch:</strong> Crea un nuevo archivo.</p>
+                <p><strong>Comando cat:</strong> Muestra el contenido de un archivo.</p>
+                <p><strong>Comando nano:</strong> Edita un archivo de texto. (abre un editor de texto)(Presiona Ctrl+X para guardar y salir)</p>
+                <h5>Copiar, mover y eliminar archivos</h5>
+                <p><strong>Comando cp:</strong> /nombre de archivo/ /nombre del archivo copia/ : Copia archivos o carpetas.</p>
+                <p><strong>Comando mv:</strong> /nombre del archivo copia/ /ruta donde copiara/: Mueve archivos o carpetas.</p>
+                <p><strong>Comando rm:</strong> /ruta del archivo/: Elimina un archivo.</p>
+                <h5>Búsqueda y filtrado</h5>
+                <p><strong>Comando grep:</strong> "palabra" /ruta del archivo/: Busca un palabra en un archivo.</p>
+                <p><strong>Comando find:</strong> /ruta /nombre del archivo: Busca un archivo en una ubicación específica.(-name ".txt" 2>/dev/null muestra todo los txt sin importar permiso) </p>
+                <h5>Permisos y procesos</h5>
+                <p><strong>Comando chmod:</strong> Cambia los permisos de un archivo o carpeta.</p>
+                <p><strong>Comando ps aux:</strong> Muestra la información de los procesos en ejecución.</p>
+                <p><strong>Comando top:</strong> Muestra los procesos en ejecución con información en tiempo real.(Presiona q para salir)</p>
+                <h5>Información del sistema</h5>
+                <p><strong>Comando df h:</strong> Muestra el espacio en disco disponible.</p>
+                <p><strong>Comando free -h:</strong> Muestra la cantidad de memoria libre y en uso.</p>
+                <h5>Información del usuario y sistema</h5>
+                 <p><strong>Comando whoami:</strong> Muestra el nombre del usuario actual.</p>
+                <p><strong>Comando uname -a:</strong> Muestra información detallada sobre el sistema operativo.</p>
+                <h5>Historial de comandos</h5>
+                <p><strong>Comando history:</strong> Muestra el historial de comandos.</p>
+            </details>
+            <details>
+                <summary>Profesores y experiencias del ciclo</summary>
+                <p>
+                    He tenido la oportunidad de conocer a varios profesores dedicados y experimentados en sus áreas de conocimiento. 
+                    Cada uno ha aportado su perspectiva única al aprendizaje, lo que ha enriquecido mi comprensión del tema.
+                </p>
+                <ol>
+                    <li>Mario Hart</li>
+                    <li>Tarazona Renfiho</li>
+                    <li>Coppert Copernico</li>
+                    <li>Tom Holland</li>
+                </ol>
+                <section>
+                    <button id="show">Haz click aqui para agregar profesores</button>
+                </section>
+            </details>
+        </section>
         
-        <section>
+        <section class="preguntas-frecuentes" id="preguntas-frecuentes">
             <h2>Preguntas frecuentes</h2>
             <details>
                 <summary>¿Qué lenguajes de programación enseñan en tu universidad?</summary>
@@ -157,116 +196,76 @@
             </details>
         </section>
 
+        <section id="contacto" class="contacto">
+            <p>Puedes contactarme a través de mi correo electrónico: <a href="mailto:U242446@utp.edu.pe">U242446@utp.edu.pe</a></p>
+            <h2>Contacto v2.1</h2>
+        <form action="" method="post">
+            <fieldset>
+                <legend><strong>Formulario de contacto </strong></legend>
 
-        <br>
-
-        <section>
-            <h2>v2.0</h2>
-            <form action="" method="post">
-                <fieldset>
-                    <legend><strong>Formulario de contacto </strong></legend>
-
-                    <div>
-                        <label for="nombre">Nombre: 
-                            <input id="nombre" type="text" name="nombre" placeholder="Esribe tu nombre" required> 
-                        </label>
-                    </div>
-                    <div>
-                        <label for="apellido">Apellido: 
-                            <input id="apellido" type="text" name="apellido" placeholder="Escribe tu apellido" required> 
-                        </label>
-                    </div>
-                    <div>
-                        <label for="email">Email: 
-                            <input id="email" type="email" name="email" placeholder="Esribe tu email" required> 
-                        </label>
-                    </div>
-                    <div>
-                        <label for="telefono">Telefono: 
-                            <input id="telefono" type="tel" name="telefono" placeholder="Escribe tu número" required>
-                        </label>
-                    </div>
-                    <div>
-                        <label for="comentario">Mensaje: </label>
-                        <div><textarea id="comentario" name="comentario" rows="3" cols="30" placeholder="Escribe tu mensaje"></textarea></div>
-                    </div>
-                    <div>
-                        <label for="why">Por qué quiere contacar?</label>
-                        <select name="why" id="why">
-                            <option value="1">Duda</option>
-                            <option value="2">Actualizar</option>
-                            <option value="3">Otras cosas</option>
-                        </select>
-                    </div>
-                    <div>
-                        <p>Genero:</p>
-                        <label for="masculino">
-                            <input type="radio" name="genero" id="masculino" value="masculino" required >Masculino
-                        </label>
-                        <label for="femenino">
-                            <input type="radio" name="genero" id="femenino" value="femenino" required>Femenino
-                        </label>
-                        
-                    </div>
-                    <p>Intereses:</p>
-                    <div>
-                        <label for="html">
-                            <div><input type="checkbox" name="intereses" id="html" value="html">Html</div>
-                        </label>
-                        <label for="css">
-                            <div><input type="checkbox" name="intereses" id="css" value="css">Css</div>
-                        </label>
-                    </div>
-                </fieldset>
-                
-                <br>
-                <button type="submit">Enviar</button>
-                <br>
-            </form>
+                <div>
+                    <label for="nombre">Nombre: 
+                        <input id="nombre" type="text" name="nombre" placeholder="Esribe tu nombre" required> 
+                    </label>
+                </div>
+                <div>
+                    <label for="apellido">Apellido: 
+                        <input id="apellido" type="text" name="apellido" placeholder="Escribe tu apellido" required> 
+                    </label>
+                </div>
+                <div>
+                    <label for="email">Email: 
+                        <input id="email" type="email" name="email" placeholder="Esribe tu email" required> 
+                    </label>
+                </div>
+                <div>
+                    <label for="telefono">Telefono: 
+                        <input id="telefono" type="tel" name="telefono" placeholder="Escribe tu número" required>
+                    </label>
+                </div>
+                <div>
+                    <label for="comentario">Mensaje: </label>
+                    <div><textarea id="comentario" name="comentario" rows="3" cols="30" placeholder="Escribe tu mensaje"></textarea></div>
+                </div>
+                <div>
+                    <label for="why">Por qué quiere contacar?</label>
+                    <select name="why" id="why">
+                        <option value="1">Duda</option>
+                        <option value="2">Actualizar</option>
+                        <option value="3">Otras cosas</option>
+                    </select>
+                </div>
+                <div>
+                    <p>Genero:</p>
+                    <label for="masculino">
+                        <input type="radio" name="genero" id="masculino" value="masculino" required >Masculino
+                    </label>
+                       <label for="femenino">
+                        <input type="radio" name="genero" id="femenino" value="femenino" required>Femenino
+                    </label>
+                </div>
+                <p>Intereses:</p>
+                <div>
+                    <label for="html">
+                        <div><input type="checkbox" name="intereses" id="html" value="html">Html</div>
+                    </label>
+                    <label for="css">
+                        <div><input type="checkbox" name="intereses" id="css" value="css">Css</div>
+                    </label>
+                </div>
+            </fieldset>
+            
+            <br>
+            <button type="submit">Enviar</button>
+            <br>
+        </form>
         </section>
-
-
     </main>
-
-    <section>
-        <h3 class="comandos">Comando de Linux/centOS-VMware Workstation </h3>
-
-        <h4>Comandos útiles para trabajar con Linux y VMware Workstation.</h4>
-
-        <h5>Navegación y archivos</h5>
-        <p><strong>Comando pwd:</strong> Muestra la ruta de la carpeta actual.</p>
-        <p><strong>Comando cd:</strong> Cambia el carpeta actual.</p>
-        <p><strong>Comando ls -la:</strong> Lista todos los archivos y carpetas en la carpeta actual, incluyendo los ocultos.</p>
-        <h5>Crear y manipular archivos</h5>
-        <p><strong>Comando mkdir:</strong> Crea una nueva carpeta.</p>
-        <p><strong>Comando touch:</strong> Crea un nuevo archivo.</p>
-        <p><strong>Comando cat:</strong> Muestra el contenido de un archivo.</p>
-        <p><strong>Comando nano:</strong> Edita un archivo de texto. (abre un editor de texto)(Presiona Ctrl+X para guardar y salir)</p>
-        <h5>Copiar, mover y eliminar archivos</h5>
-        <p><strong>Comando cp:</strong> /nombre de archivo/ /nombre del archivo copia/ : Copia archivos o carpetas.</p>
-        <p><strong>Comando mv:</strong> /nombre del archivo copia/ /ruta donde copiara/: Mueve archivos o carpetas.</p>
-        <p><strong>Comando rm:</strong> /ruta del archivo/: Elimina un archivo.</p>
-        <h5>Búsqueda y filtrado</h5>
-        <p><strong>Comando grep:</strong> "palabra" /ruta del archivo/: Busca un palabra en un archivo.</p>
-        <p><strong>Comando find:</strong> /ruta /nombre del archivo: Busca un archivo en una ubicación específica.(-name ".txt" 2>/dev/null muestra todo los txt sin importar permiso) </p>
-        <h5>Permisos y procesos</h5>
-        <p><strong>Comando chmod:</strong> Cambia los permisos de un archivo o carpeta.</p>
-        <p><strong>Comando ps aux:</strong> Muestra la información de los procesos en ejecución.</p>
-        <p><strong>Comando top:</strong> Muestra los procesos en ejecución con información en tiempo real.(Presiona q para salir)</p>
-        <h5>Información del sistema</h5>
-        <p><strong>Comando df h:</strong> Muestra el espacio en disco disponible.</p>
-        <p><strong>Comando free -h:</strong> Muestra la cantidad de memoria libre y en uso.</p>
-        <h5>Información del usuario y sistema</h5>
-        <p><strong>Comando whoami:</strong> Muestra el nombre del usuario actual.</p>
-        <p><strong>Comando uname -a:</strong> Muestra información detallada sobre el sistema operativo.</p>
-        <h5>Historial de comandos</h5>
-        <p><strong>Comando history:</strong> Muestra el historial de comandos.</p>
-
-    </section>
-
     <footer>
         <br>
-        Visit Mailchimp Presents 2026<br>
+        <p>Hecho por Mario Vilcapoma</p>
+        <a href="https://github.com/xander-rx" target="_blank" rel="noreferrer">Github</a>
+        <br>
         <a href="mailto:loqueados300@gmail.com">Enviame un correo</a><br>
         <a href="tel:+51907309802">Llamar por telefono</a>
     </footer>
