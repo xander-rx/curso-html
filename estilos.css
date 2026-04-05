@@ -1,4 +1,15 @@
 
+        :root {
+            --primary-color: royalBlue;
+            --text-color:hsl(0,0%,31%);
+            --bg-color: hsl(0,0,90%);
+            --bg-card-color: hsl(0,0%,98%);
+            --border-radius: 0.4em;
+            --transition: color 0.1s, background-color 0.2s ease-in-out;
+            --skills-bar-length: 0%;
+
+        }
+        
         /* Header
         --------------------------------- */
         header{
@@ -59,6 +70,88 @@
         /*--------------------------------
         -----------------------------------------
         ----------------------------------*/
+
+        /*-----------------------------------------
+        Body
+        -----------------------------------------*/
+
+        /* Estilos para organizar los elementos en columnas */
+
+        .column{
+            display: grid; /* Cambia a grid para organizar los elementos en filas y columnas */
+            gap: 0.5em; /* Espacio entre los elementos */   
+        }
+
+        @media screen and (min-width: 700px) { /* Estilos para pantallas grandes */
+            .column--right {
+                grid-template-columns: repeat(3, 1fr); /* Tres columnas iguales */
+                grid-template-rows: repeat(3,min-content);
+            }
+        }
+
+        .skills{
+            padding: 1em 0; /* Espacio entre las habilidades */
+        }
+
+        .skills__item{
+            display: flex; /* Cambia a flex para organizar los elementos en una fila */
+            align-items: center; /* Alinea verticalmente los elementos */
+            justify-content: space-between; /* Espacio entre los elementos */
+        }
+
+        .skills__bar, .skills__bar::after{
+            position: relative; /*Posicion */
+            width: 175px; /* Ancho de la barra de habilidades */
+            height: 8px; /* Altura de la barra de habilidades */
+            background-color: #420404; /* Color de fondo de la barra de habilidades */
+            border-radius: var(--border-radius); /* Radio de las esquinas redondeadas */
+            overflow: hidden;
+        }
+
+        .skills__bar::after{
+            content: ""; /* Contenido vacío para crear la barra de progreso */
+            position: absolute; /* Posiciona la barra de progreso de forma absoluta */
+            left: -175px; 
+            background-color: var(--primary-color); 
+            transition: var(--transition);
+            animation: skills-bar-fill 2s ease-in-out forwards;
+        }
+
+        .skills__bar--10::after{
+            --skills-bar-length:10%
+        }
+        .skills__bar--20::after{
+            --skills-bar-length:20%
+        }
+        .skills__bar--30::after{
+            --skills-bar-length:30%
+        }
+        .skills__bar--40::after{
+            --skills-bar-length:40%
+        }
+        .skills__bar--50::after{
+            --skills-bar-length:50%
+        }
+        .skills__bar--60::after{
+            --skills-bar-length:60%
+        }
+        .skills__bar--70::after{
+            --skills-bar-length:70%
+        }
+        .skills__bar--80::after{
+            --skills-bar-length:80%
+        }
+        .skills__bar--90::after{
+            --skills-bar-length:90%
+        }
+
+
+        @keyframes skills-bar-fill {
+            to{
+                transform: translateX(var(--skills-bar-length))
+            }
+            
+        }
 
         
         h5{
