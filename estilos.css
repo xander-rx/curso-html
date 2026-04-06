@@ -75,6 +75,16 @@
         Body
         -----------------------------------------*/
 
+        /* Seccion hero */
+        .hero-imagen img{
+            width: 500px;
+            height: auto;
+            object-fit: cover;
+            margin: 25px 10px;
+
+        }
+
+
         /* Estilos para organizar los elementos en columnas */
 
         .column{
@@ -196,21 +206,128 @@
             overflow-x: auto;
         }
  
+        /* Formulario de Contactanos*/
 
+        .contacto {
+            padding: 40px 20px;
+        }
+
+        .form-card {
+            max-width: 720px;
+            margin: 0 auto;
+            background: #f8fffb;
+            border: 1px solid #d8e7de;
+            border-radius: 20px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+            padding: 28px;
+        }
+        .form-header h2 {
+            margin: 0 0 8px;
+            font-size: 1.7rem;
+            color: #1f2d2a;
+        }
+
+        .form-header p {
+            display: flex;
+            color: 1f2d2a;
+            font-size: 0.95rem;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+        }
+
+        .form-group label{
+            font-size: 0.92rem;
+            font-weight: 600;
+            color: #2b3b36;;
+        }
+
+        .form-group label span{
+            color: #2f8f62
+
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 14px;
+            border: 1px solid #cfdcd5;
+            border-radius: 8px;
+            background: #ffffff;
+            color: #24312c;
+            outline: none;
+            box-sizing: border-box;
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+        color: #95a39d;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: #2f8f62;
+            box-shadow: 0 0 0 3px rgba(47, 143, 98, 0.14);
+        }
+
+        .form-group-full {
+            width: 100%;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .check-line {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            font-size: 0.85rem;
+            color: #51615b;
+            line-height: 1.4;
+        }
+
+        .check-line input {
+            margin-top: 3px;
+        }
+
+        .btn-form {
+            width: 100%;
+            border: none;
+            border-radius: 8px;
+            padding: 14px 18px;
+            background: linear-gradient(90deg, #165c43, #2f8f62);
+            color: white;
+            font-weight: 700;
+            cursor: pointer;
+            transition: transform 0.15s ease, opacity 0.2s ease;
+        }
+
+        .btn-form:hover {
+            opacity: 0.95;
+        }
+
+        .btn-form:active {
+            transform: scale(0.99);
+        }
         
-        h5{
-            color: rgb(4, 134, 4);
-            font-family: 'Times New Roman', Times, serif;
-            font-size: 1.04em;
-        }
-        .comandos{
-            border: 2px solid rgb(0, 90, 27);
-            padding: 12px;
-            margin: 10px 0;
-            border-radius: 10px;
-            background-color: rgb(136, 255, 136);
-            color:rgb(85, 0, 74)
-        }
 
         #hero,
         #habilidades,
@@ -242,6 +359,28 @@
         textarea {
         font-family: inherit;
         font-size: 100%;
+        }
+
+        /*-----------------------------
+        footer
+        -------------------------------*/
+
+        footer{
+            background: #191927;
+            color: white;
+            text-align: center;
+            padding: 25px 16px;
+            margin-top: 40px;
+        }
+
+        footer a{
+            color: #00adb5;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        footer a:hover{
+            text-decoration: underline;
         }
 
       

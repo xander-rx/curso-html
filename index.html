@@ -63,7 +63,9 @@
                </p>
               <a href="#cursos" class="btn">Ver proyectos</a> <!-- Enlace a la sección de proyecto -->
             </div>
-            <div class="hero-imagen">
+
+            <p>Una foto mía :p</p>
+            <div class="hero-imagen" id="hero-imagen">
                 <img src="images/tom.jpg" alt="Foto de Mario">
              </div>
         </section>
@@ -218,12 +220,51 @@
         </section>
 
         <section id="contacto" class="contacto">
-            <p>Puedes contactarme a través de mi correo electrónico: <a href="mailto:U242446@utp.edu.pe">U242446@utp.edu.pe</a></p>
+            <div class="form-card">
+                <div class="form-header">
+                    <h2>Contáctanos</h2>
+                    <p>Nos encanta saber de ti. Por favor completa el siguiente formulario</p>
+                </div>
+                <form class="contact-form" action="" method="post">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="nombre">Nombre <span>*</span></label>
+                            <input id="nombre" type="text" name="nombre" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="apellido">Apellido <span>*</span></label>
+                            <input id="apellido" type="text" name="apellido" placeholder="Tu apellido" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo <span>*</span></label>
+                            <input id="email" type="text" name="email" placeholder="corre@gmail.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telefono">Teléfono<span>*</span></label>
+                            <input type="telefono" type="tel" name="telefono" placeholder="+51 999 000 999" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group form-group-full">
+                        <label for="comentario">Mensaje <span>*</span></label>
+                        <textarea name="comentario" id="comentario" rows="5" placeholder="Escribeme si necesitas algo"></textarea>
+                    </div>
+                    <label class="check-line">
+                        <input type="checkbox" required>
+                        <span>Al contactarnos, usted acepta nuestros Términos y Condiciones.</span>
+                    </label>
+
+                    <button type="submit" class="btn-form">Enviar</button>
+
+                </form>
+            </div>
+        </section>
+
+        <!-- <div>  ANTIGUO formulario
+            
             <h2>Contacto v2.1</h2>
         <form action="" method="post">
-            <fieldset>
-                <legend><strong>Formulario de contacto </strong></legend>
-
                 <div>
                     <label for="nombre">Nombre: 
                         <input id="nombre" type="text" name="nombre" placeholder="Esribe tu nombre" required> 
@@ -248,14 +289,7 @@
                     <label for="comentario">Mensaje: </label>
                     <div><textarea id="comentario" name="comentario" rows="3" cols="30" placeholder="Escribe tu mensaje"></textarea></div>
                 </div>
-                <div>
-                    <label for="why">Por qué quiere contacar?</label>
-                    <select name="why" id="why">
-                        <option value="1">Duda</option>
-                        <option value="2">Actualizar</option>
-                        <option value="3">Otras cosas</option>
-                    </select>
-                </div>
+                 marcar radio// opciones
                 <div>
                     <p>Genero:</p>
                     <label for="masculino">
@@ -264,8 +298,9 @@
                        <label for="femenino">
                         <input type="radio" name="genero" id="femenino" value="femenino" required>Femenino
                     </label>
-                </div>
                 <p>Intereses:</p>
+
+                casilla de marcar 
                 <div>
                     <label for="html">
                         <div><input type="checkbox" name="intereses" id="html" value="html">Html</div>
@@ -274,21 +309,22 @@
                         <div><input type="checkbox" name="intereses" id="css" value="css">Css</div>
                     </label>
                 </div>
-            </fieldset>
-            
             <br>
             <button type="submit">Enviar</button>
             <br>
+            <br>
         </form>
-        </section>
+                        -->            
+
     </main>
     <footer>
         <br>
         <p>Hecho por Mario Vilcapoma</p>
-        <a href="https://github.com/xander-rx" target="_blank" rel="noreferrer">Github</a>
-        <br>
-        <a href="mailto:loqueados300@gmail.com">Enviame un correo</a><br>
-        <a href="tel:+51907309802">Llamar por telefono</a>
+        <p><a href="https://github.com/xander-rx" target="_blank" rel="noreferrer">Github</a>
+        <p>Puedes contactarme por :</p>
+        <p><a href="mailto:U242446@utp.edu.pe">Correo</a></p>
+        <p><a href="tel:+51907309802">Telefono</a></p>
+
     </footer>
 </body>
 </html>
