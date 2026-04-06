@@ -177,7 +177,7 @@
 
         .contendio-tabla{
             border-collapse: collapse; 
-            margin: 25px 10px;
+            margin: 25px 0;
             font-size: 0.9em;
             min-width: 600px;
             border-radius: 5px 5px 0 0;
@@ -215,6 +215,8 @@
 
         .tabla-wrap{  /*Para  responsive a movil*/
             overflow-x: auto;
+            display: flex;
+            justify-content: center;
         }
  
         /* Formulario de Contactanos*/
