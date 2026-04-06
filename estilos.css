@@ -75,6 +75,14 @@
         Body
         -----------------------------------------*/
 
+        /*CENTRAR TODO (CENTRE DIVE)*/
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
         /* Seccion hero */
         .hero-imagen img{
             width: 500px;
@@ -84,8 +92,10 @@
 
         }
 
+        
 
-        /* Estilos para organizar los elementos en columnas */
+
+        /* Estilos para organizar las skills los elementos en columnas */
 
         .column{
             display: grid; /* Cambia a grid para organizar los elementos en filas y columnas */
