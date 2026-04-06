@@ -1,6 +1,6 @@
 
         :root {
-            --primary-color: royalBlue;
+            --primary-color: #00adb5;
             --text-color:hsl(0,0%,31%);
             --bg-color: hsl(0,0,90%);
             --bg-card-color: hsl(0,0%,98%);
@@ -104,26 +104,33 @@
 
         @media screen and (min-width: 700px) { /* Estilos para pantallas grandes */
             .column--right {
-                grid-template-columns: repeat(3, 1fr); /* Tres columnas iguales */
-                grid-template-rows: repeat(3,min-content);
+                grid-template-columns: 1fr; /* Tres columnas iguales */
+                justify-content: center;
             }
         }
 
+        .skills__tech{
+            min-width: 60px;
+            text-align: left;
+        }
+
         .skills{
-            padding: 1em 0; /* Espacio entre las habilidades */
+            max-width: 400px;
+            margin: 0 auto;
         }
 
         .skills__item{
             display: flex; /* Cambia a flex para organizar los elementos en una fila */
             align-items: center; /* Alinea verticalmente los elementos */
-            justify-content: space-between; /* Espacio entre los elementos */
+            justify-content: center;
+            gap: 15px;
         }
 
         .skills__bar, .skills__bar::after{
             position: relative; /*Posicion */
             width: 175px; /* Ancho de la barra de habilidades */
             height: 8px; /* Altura de la barra de habilidades */
-            background-color: #420404; /* Color de fondo de la barra de habilidades */
+            background-color: #ffffff; /* Color de fondo de la barra de habilidades */
             border-radius: var(--border-radius); /* Radio de las esquinas redondeadas */
             overflow: hidden;
         }
