@@ -15,7 +15,7 @@
         header{
             font-family: 'Courier New', Courier, monospace;
             background: #191927;
-            color: white;
+            color: wheat;
             padding: 15px 30px  ; 
 
             display: flex; 
@@ -394,7 +394,7 @@
         }
 
         footer a{
-            color: #00adb5;
+            color: #2f8f62;
             text-decoration: none;
             font-weight: 500;
         }
