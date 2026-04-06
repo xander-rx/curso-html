@@ -173,6 +173,7 @@
             border-radius: 5px 5px 0 0;
             overflow: hidden;
             box-shadow: 0 0 20px rgb(0, 0, 0,0.15);
+            table-layout: fixed;
         }
 
         .contendio-tabla thead tr{
@@ -382,5 +383,76 @@
         footer a:hover{
             text-decoration: underline;
         }
+        
+        /* media quere / responsive */
+
+    @media screen and (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 14px 18px;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .nav a {
+        font-size: 0.95rem;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px 16px;
+    }
+
+    .hero-imagen img {
+        width: 100%;
+        max-width: 260px;
+        margin: 16px auto 0;
+        display: block;
+    }
+
+    .skills__item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .skills__bar {
+        width: 100%;
+        max-width: 260px;
+    }
+
+    .skills__bar::after {
+        left: -260px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-card {
+        padding: 20px;
+    }
+
+    .contacto {
+        padding: 24px 14px;
+    }
+
+    .contendio-tabla {
+        min-width: 520px;
+    }
+
+    footer {
+        padding: 20px 14px;
+    }
+}
 
       
